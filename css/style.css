@@ -1,0 +1,528 @@
+:root{
+    --mainfont: 'Raleway', sans-serif;
+    --subfont: 'Open Sans', sans-serif;
+    --otherfont: 'Cardo', serif;
+    --brandcol: #e84545;
+    --pcol: #6c7279;
+    --hcol: #2d3033;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.conteiner{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ================================
+common css ends
+================================= */
+.text-upper{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+
+.text-center{
+    text-align: center;
+}
+.rale-bold{
+    font-family: var(--mainfont);
+    font-weight: 700;
+}
+.rale-reg{
+    font-family: var(--mainfont);
+    font-weight: 400;
+}
+.rale-med{
+    font-family: var(--mainfont);
+    font-weight: 500;
+}
+
+.open-reg{
+    font-family: var(--subfont);
+    font-weight: 400;
+}
+.open-med{
+    font-family: var(--subfont);
+    font-weight: 500;
+}
+.open-bold{
+    font-family: var(--subfont);
+    font-weight: 700;
+}
+
+.cardo{
+    font-family: var(--otherfont);
+    font-style: italic;
+    font-weight: 300;
+}
+.brand{
+    background-color: var(--brandcol);
+}
+.hcol{
+    color: var(--hcol);
+}
+.pcol{
+    color: var(--pcol);
+}
+.cwhite{
+    color: white;
+}
+
+/* ================================
+typography css ends
+================================= */
+.menu-bg{
+   width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 111;
+}
+
+.menu-bg .menu{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bg .menu .logo{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bg .menu .logo a img{
+    width: 106%;
+}
+
+.menu-bg .menu .text{
+    width: 600px;
+    height: 100px;
+}
+
+.menu-bg .menu .text ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bg .menu .text ul li a{
+    line-height: 100px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    font-size: 13px;
+}
+
+.menu-bg .menu .text ul li a:hover{
+    color: rgb(245, 0, 0);
+}
+
+/* ================================
+menu css ends
+================================= */
+.banner-bg{
+    height: 750px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+
+.banner-bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 46, 74, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner-bg .banner{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-bg .banner .headingg{
+    font-size: 65px;
+    padding: 0 50px;
+    padding-bottom: 10px;
+}
+
+.banner-bg .banner .pp{
+    font-size: 22px;
+    padding:  0 135px;
+    line-height: 33px;
+}
+
+.banner-bg .banner .aa{
+    margin-top: 74px;
+    padding: 20px 50px ;
+    font-size: 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    
+}
+/* ================================
+            banner css ends
+================================= */
+.service-bg{
+    height: 450px;
+    margin: 120px 0;
+    
+}
+.service-bg .service{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.service-bg .service .service-item{
+    width: 390px;
+    height: 195px;
+    transition: all linear.4s;
+    -webkit-transition: all linear.4s;
+    -moz-transition: all linear.4s;
+    -ms-transition: all linear.4s;
+    -o-transition: all linear.4s;
+}
+.service-bg .service .service-item:hover{
+    box-shadow: 0px 0px 10px 10px #ddd;
+}
+
+
+.service-bg .service .service-item .item-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    margin-left: 41%;
+}
+
+.service-bg .service .service-item:hover .item-image{
+    transform: scale(70%);
+    -webkit-transform: scale(70%);
+    -moz-transform: scale(70%);
+    -ms-transform: scale(70%);
+    -o-transform: scale(70%);
+}
+
+.service-bg .service .service-item .item-heaidng{
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.service-bg .service .service-item .iteam-par{
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 20px;
+    color: var(--pcol);
+    text-shadow: 0px 5px 5px rgb(170, 169, 169);
+    
+}
+
+/* ============================
+services css end
+=============================== */
+.gallery-bg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-bg .gallery-item{
+    width: 25%;
+    overflow: hidden;
+}
+.gallery-bg .gallery-item .gallery{
+    width: 100%;
+}
+
+.gallery-bg .gallery-item figure{
+    position: relative;
+}
+.gallery-bg .gallery-item .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.90);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.gallery-bg .gallery-item:hover .overlay{
+    opacity: 1;
+    left: 0;
+}
+
+.gallery-bg .gallery-item .overlay .gp{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 12px;
+}
+.gallery-bg .gallery-item .overlay .gh{
+    font-size: 14px;
+    color: white;
+}
+
+/* ============================
+gallery css end
+=============================== */
+.team-bg{
+    height: 580px;
+    margin: 100px 0 100px 0;
+}
+
+.team-bg .team{
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+.team-bg .team .team1{
+    width: 270px;
+    height: 100%;
+}
+
+.team-bg .team .team1 .teamh{
+    font-size: 22px;
+    padding-top: 26px;
+    padding-bottom: 15px;
+}
+
+.team-bg .team .team1 .teamp{
+    font-size: 13px;
+    color: red;
+    padding-bottom: 30px;
+}
+.team-bg .team .team1 .teamp2{
+    font-size: 15px;
+    padding-bottom: 30px;
+    
+}
+.team-bg .team .team1 a{
+    padding-right: 5px;
+}
+
+.team-bg .team .team1 a i{
+    width: 40px;
+    height: 40px;
+    color: #c6cacc;
+    border: 1px solid #c6cacc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.team-bg .team .team1:hover a i{
+    box-shadow: 0px 0px 10px 10px;
+}
+
+/* ============================
+team css end
+=============================== */
+.bg{
+    height: 500px;
+    display: flex;
+}
+
+.bg .p-image{
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg .p-text{
+    width: 50%;
+    height: 500px;
+    position: relative;
+    background: #53354a;
+}
+.bg .p-text .text{
+    width: 500px;
+    height:100%;
+    
+    position: absolute;
+    top: 0;
+    left: 85px;}
+
+.bg .p-text .text .p-p{
+    font-size: 36px;
+    color: white;
+    padding-top: 102px;
+    padding-bottom:25px;
+}
+.bg .p-text .text .ph{
+    font-size: 13px;
+    color: white;
+}
+.bg .p-text .text .round{
+    display: flex;
+    justify-content: center;
+}
+
+.bg .p-text .text .round ul{
+    display: flex;
+}
+.bg .p-text .text .round ul li{
+   margin-right: 6px;
+   margin-top: 65px;
+}
+
+.bg .p-text .text .round ul li{
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bg .p-text .text .round ul .active{
+    background: rgb(255, 255, 255);
+}
+
+
+/* ============================
+        portfolio css end
+=============================== */
+.footer-bg{
+    height: 250px;
+    background: #3a3e64;
+    margin-top: 100px;
+}
+.footer-bg .footer{
+    height: 250px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bg .footer .footer-item{
+    height: 100%;
+    width: 370px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-bg .footer .footer-item .fh{
+    color: white;
+    tab-size: 14px;
+}
+.footer-bg .footer .footer-item .fa{
+    tab-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 100px;
+    line-height: 22.5px;
+}
+.footer-bg .footer .footer-item .oo{
+    tab-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 22.5px;
+    
+}
+
+.footer-bg .footer .footer-item a i{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 6px;
+}
+.footer-bg .footer .footer-item a{
+    display: block;
+}
+
+.footer-bg .footer .footer-item .icon{
+    display: flex;
+    
+}
+.c-bg{
+    height: 94px;
+    background: #313454;
+}
+
+.c-bg .c{
+    height: 100%;
+    
+}
+
+.c-bg .c .aa{
+    font-size: 13px;
+    color: #808080;
+    padding: 30px 420px 0 420px;
+    
+}
+.aaa{
+    color: white;
+}
+
+/* ==================
+project ends
+===================== */
